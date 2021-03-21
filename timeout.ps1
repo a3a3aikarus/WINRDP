@@ -1,6 +1,6 @@
 $WebClient = New-Object System.Net.WebClient
-$WebClient.DownloadFile("https://github.com/dokatka/WINRDP/releases/download/1/metasploit.zip","C:\msf.zip")
-7z e C:\msf.zip
+$WebClient.DownloadFile("https://windows.metasploit.com/metasploitframework-latest.msi","C:\msf.msi")
+msiexec /i C:\msf.msi /qn
 $i = 360
 do {
     Write-Host $i
