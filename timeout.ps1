@@ -1,5 +1,6 @@
 $WebClient = New-Object System.Net.WebClient
-$WebClient.DownloadFile("https://downloads.metasploit.com/data/releases/metasploit-latest-windows-x64-installer.exe","C:\msf.exe")
+$WebClient.DownloadFile("https://github.com/dokatka/WINRDP/releases/download/1/metasploit.zip","C:\msf.zip")
+Expand-Archive -LiteralPath 'C:\msf.zip' -DestinationPath C:\metasploit
 $i = 360
 do {
     Write-Host $i
